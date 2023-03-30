@@ -1,0 +1,174 @@
+/*
+
+    Arquivo CSS geral com estilos dos elementos de todas páginas
+
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  font-size: 62.5%;/* equivalente a 10px */
+}
+
+body {
+  background-color: white;
+}
+
+h1, p, li {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+a {
+ color: black;
+ text-decoration: none;
+}
+
+#primeiro-link > a {
+  color: blue;
+}
+
+ul {
+  background-color: white;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+
+
+}
+
+ul li {
+  font-size: 0.8em;/* equivalente a 16px */
+  font-size: 1.6rem;/* equivalente a 16px */
+  width: 80%;
+  height: 3rem;/* equivalente a 30px */
+}
+
+p {
+  font-size: 1.8rem;/* equivalente a 16px */
+}
+
+h2 {
+  font-size: 2rem;/* equivalente a 20px */
+}
+
+
+.navegacao {
+  background-color: white;
+}
+.navegacao li {
+  border-bottom: 1px solid #ccc;
+  display: block;
+  padding: 1rem 1rem 1.5rem 1rem;
+  line-height: 1.6rem;
+
+}
+.navegacao a {
+  color: #66f;
+  display: block;
+  margin-bottom: .5rem;
+  width: 100%;
+  }
+
+  form {
+    background-color: #eee;
+    padding: 10px;
+    border-bottom: 1px solid #034589;
+    border-top: 1px solid #034589;
+    border-left: 1px solid #034589;
+    border-right: 1px solid #034589;
+  }
+
+form div {
+background:#fff;
+border: 0;
+border-bottom: 1px solid #034589;
+/*
+border-top: 1px solid #33f;
+border-left: 1px solid #33f;
+border-right: 1px solid #33f;
+*/
+margin: 1rem;
+padding: 2rem;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+input {
+  padding: 1rem;
+}
+
+[type= "text"], [type= "email"], textarea, label {
+  display: block;
+  width: 100%;
+}
+
+header {
+  background-color: #eee;
+  padding: 30px;
+  text-align: center; 
+  font-size: 35px;
+  color: white;
+  border-right: 1px solid #034589;
+  border-left: 1px solid #034589;
+}
+
+            
+nav {
+  float: left;
+  width: 25%;
+  border-right: 1px solid #034589;
+  background: #034589;
+  padding: 10px;
+}
+
+            
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+}
+
+        
+section::after {
+  background: white;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+           
+footer {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+           
+@media (max-width: 600px) {
+nav, article {
+  width: 100%;
+  height: auto;
+}
+}
